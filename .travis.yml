@@ -1,0 +1,25 @@
+os:
+  - linux
+  - osx
+sudo: required
+language:        node_js
+node_js:
+  - "node"
+  - "lts/*"
+  - "8"
+env:
+  - ENV=CI
+
+before_install:
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install pkg-config cairo pango libpng jpeg giflib    ; fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get install libcairo2-dev libjpeg-dev libpango1.0-dev libgif-dev build-essential g++    ; fi
+  - npm install -g npm@latest
+
+install:
+  - npm install
+
+script:
+  - npm run test
+
+notifications:
+  email:         false

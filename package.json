@@ -1,0 +1,38 @@
+{
+  "name": "descartes.js",
+  "version": "0.0.1",
+  "description": "A JS alternative to matplotlib, made for Descartes",
+  "main": "dist/descartes.js",
+  "scripts": {
+    "test": "npm run gulp && npm run eye",
+    "gulp": "gulp",
+    "eye": "eye"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arguiot/Descartes.git"
+  },
+  "keywords": [
+    "math",
+    "graph",
+    "descartes",
+    "theoremjs",
+    "plot"
+  ],
+  "author": "Arthur Guiot",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arguiot/Descartes/issues"
+  },
+  "homepage": "https://github.com/arguiot/Descartes#readme",
+  "devDependencies": {
+    "eye.js": "^1.0.2",
+    "gulp": "^3.9.1",
+    "gulp-babili": "^0.1.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-rigger": "^0.5.8"
+  },
+  "dependencies": {
+    "canvas": "^1.6.9"
+  }
+}
