@@ -8,15 +8,7 @@ drawAxis(x="auto", y="auto", color="black") {
 	}
 	this.mainVector = [x, y]
 	// x axis
-	this.ctx.beginPath();
-	this.ctx.moveTo(0, y);
-	this.ctx.lineTo(this.width, y)
-	this.ctx.fill()
-	this.ctx.stroke()
+	this.ctx.fillRect(0, y, this.width, 1)
 	// y axis
-	this.ctx.beginPath();
-	this.ctx.moveTo(x, 0);
-	this.ctx.lineTo(x, this.height)
-	this.ctx.fill()
-	this.ctx.stroke()
+	this.ctx.fillRect(x, 0, 1, this.height)
 }

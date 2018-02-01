@@ -16,17 +16,29 @@ class Descartes {
 		}
 		this.mainVector = [x, y]
 		// x axis
-		this.ctx.beginPath();
-		this.ctx.moveTo(0, y);
-		this.ctx.lineTo(this.width, y)
-		this.ctx.fill()
-		this.ctx.stroke()
+		this.ctx.fillRect(0, y, this.width, 1)
 		// y axis
-		this.ctx.beginPath();
-		this.ctx.moveTo(x, 0);
-		this.ctx.lineTo(x, this.height)
-		this.ctx.fill()
-		this.ctx.stroke()
+		this.ctx.fillRect(x, 0, 1, this.height)
+	}
+	format(x, y) {
+		if (x.length != y.length) {
+			throw "x array and y array don't have the same length"
+			return 0;
+		}
+		let obj = {}
+		for (let i in x) {
+			obj[x[i]] = y[i]
+		}
+		return obj;
+	}
+	grid(n=10, color="grey") {
+		this.ctx.fillStyle = color
+		for (var i = 0; i < this.width; i += n) {
+			this.ctx.fillRect(i, 0, 1, this.height)
+		}
+		for (var i = 0; i < this.height; i += n) {
+			this.ctx.fillRect(0, i, this.width, 1)
+		}
 	}
 	init(width = 200, height = 200, ext = "png") {
 	    this.width = width;
@@ -35,10 +47,37 @@ class Descartes {
 	    this.canvas = new canvas(width, height, ext)
 	    this.ctx = this.canvas.getContext("2d")
 	    this.mainVector = [0, this.height]
-	
+		this.scale = 2;
 	    this.ctx.fillStyle = "black";
 	    this.ctx.fillRect(0, 0, canvas.width, canvas.height);
 		this.ctx.save()
+	}
+	plot(points, width=5, color="black") {
+		this.ctx.strokeStyle = color;
+		this.ctx.lineWidth = width
+		const x = Object.keys(points).map(a => parseFloat(a))
+	    const y = Object.values(points).map(a => parseFloat(a))
+		this.ctx.beginPath();
+		this.ctx.moveTo(this.mainVector[0] + x[0] * this.scale, this.mainVector[1] - y[0] * this.scale)
+	    for (let i in x) {
+			const a = this.mainVector[0] + x[i] * this.scale;
+			const b = this.mainVector[1] - y[i] * this.scale;
+			this.ctx.lineTo(a, b)
+			this.ctx.moveTo(a, b)
+	    }
+		this.ctx.stroke()
+	}
+	points(points, color = "black") {
+	    this.ctx.fillStyle = color;
+	    const x = Object.keys(points).map(a => parseFloat(a))
+	    const y = Object.values(points).map(a => parseFloat(a))
+	    for (let i in x) {
+			const a = this.mainVector[0] + x[i] * this.scale;
+			const b = this.mainVector[1] - y[i] * this.scale;
+	        this.ctx.beginPath();
+	        this.ctx.arc(a, b, this.width / 200, 0, 2 * Math.PI, true);
+	        this.ctx.fill();
+	    }
 	}
 	savefig(path) {
 	    const ext = require('path').extname(path).split(".")[1]

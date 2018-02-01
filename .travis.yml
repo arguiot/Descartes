@@ -20,6 +20,7 @@ install:
 
 script:
   - npm run test
+  - node __test__/test-basic.js
 
 notifications:
   email:         false
