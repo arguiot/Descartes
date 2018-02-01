@@ -19,7 +19,8 @@ install:
   - npm install
 
 script:
-  - npm run test
+  # - npm run test
+  - npm run gulp
   - node __test__/test-basic.js
 
 notifications:
