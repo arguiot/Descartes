@@ -1,14 +1,15 @@
 const d = require("../dist/descartes")
-
+const t = require("theorem.js")
 d.init(1000, 1000, "png")
 
-d.grid(10)
+d.scale = 100 // zoom 100x
+d.grid()
 d.drawAxis()
 
-d.scale = 10 // zoom 10x
 d.points({
 	1: 2,
 	3: 4
 })
-d.plot(d.format([1, 2, 3, 4], [1, 4, 9, 16]), 2)
+const f = t.f("x", "(x) ** 3")
+d.plotF(f)
 d.savefig("test.png")

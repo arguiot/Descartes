@@ -31,12 +31,12 @@ class Descartes {
 		}
 		return obj;
 	}
-	grid(n=10, color="grey") {
+	grid(n=1, color="grey") {
 		this.ctx.fillStyle = color
-		for (var i = 0; i < this.width; i += n) {
+		for (var i = 0; i < this.width; i += n * this.scale) {
 			this.ctx.fillRect(i, 0, 1, this.height)
 		}
-		for (var i = 0; i < this.height; i += n) {
+		for (var i = 0; i < this.height; i += n * this.scale) {
 			this.ctx.fillRect(0, i, this.width, 1)
 		}
 	}
@@ -52,22 +52,34 @@ class Descartes {
 	    this.ctx.fillRect(0, 0, canvas.width, canvas.height);
 		this.ctx.save()
 	}
-	plot(points, width=5, color="black") {
-		this.ctx.strokeStyle = color;
-		this.ctx.lineWidth = width
-		const x = Object.keys(points).map(a => parseFloat(a))
+	plot(points, width = 5, color = "black") {
+	    this.ctx.strokeStyle = color;
+	    this.ctx.lineWidth = width
+	    const x = Object.keys(points).map(a => parseFloat(a))
 	    const y = Object.values(points).map(a => parseFloat(a))
-		this.ctx.beginPath();
-		this.ctx.moveTo(this.mainVector[0] + x[0] * this.scale, this.mainVector[1] - y[0] * this.scale)
+	    this.ctx.beginPath();
+	    this.ctx.moveTo(this.mainVector[0] + x[0] * this.scale, this.mainVector[1] - y[0] * this.scale)
 	    for (let i in x) {
-			const a = this.mainVector[0] + x[i] * this.scale;
-			const b = this.mainVector[1] - y[i] * this.scale;
-			this.ctx.lineTo(a, b)
-			this.ctx.moveTo(a, b)
+	        const a = this.mainVector[0] + x[i] * this.scale;
+	        const b = this.mainVector[1] - y[i] * this.scale;
+	        this.ctx.lineTo(a, b)
+	        this.ctx.moveTo(a, b)
 	    }
-		this.ctx.stroke()
+	    this.ctx.stroke()
 	}
-	points(points, color = "black") {
+	plotF(f, width = 2, color = "black") {
+	    this.ctx.strokeStyle = color;
+	    this.ctx.lineWidth = width
+	    this.ctx.beginPath();
+	    this.ctx.moveTo(this.mainVector[0] + 0 * this.scale, this.mainVector[1] - f.core(-this.width / 2) * this.scale)
+	    for (var i = -this.width / 2; i < this.width; i += 0.1) {
+	        const y = this.mainVector[1] - f.core(i) * this.scale
+	        this.ctx.lineTo(this.mainVector[0] + i * this.scale, y)
+	        this.ctx.moveTo(this.mainVector[0] + i * this.scale, y)
+	    }
+	    this.ctx.stroke()
+	}
+	points(points, size=5, color = "black") {
 	    this.ctx.fillStyle = color;
 	    const x = Object.keys(points).map(a => parseFloat(a))
 	    const y = Object.values(points).map(a => parseFloat(a))
@@ -75,7 +87,7 @@ class Descartes {
 			const a = this.mainVector[0] + x[i] * this.scale;
 			const b = this.mainVector[1] - y[i] * this.scale;
 	        this.ctx.beginPath();
-	        this.ctx.arc(a, b, this.width / 200, 0, 2 * Math.PI, true);
+	        this.ctx.arc(a, b, size, 0, 2 * Math.PI, true);
 	        this.ctx.fill();
 	    }
 	}
