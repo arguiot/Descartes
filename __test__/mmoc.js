@@ -61,6 +61,6 @@ eye.describe("MMOC - Rendering", () => {
 	)
 })
 eye.test("File verification", "node",
-	$ => $(md5.sync(__testDir + "out/mmoc.png")).Equal("55fabbacce7810db3c35e68b4a74da7d"),
-	$ => $(md5.sync(__testDir + "out/mmoc.jpg")).Equal("55fabbacce7810db3c35e68b4a74da7d")
+	$ => $(md5.sync(__testDir + "out/mmoc.png")).Equal(process.platform == "darwin" ? "55fabbacce7810db3c35e68b4a74da7d" : "16132103bde69cc6ed48e683c8493ca8"),
+	$ => $(md5.sync(__testDir + "out/mmoc.jpg")).Equal(process.platform == "darwin" ? "55fabbacce7810db3c35e68b4a74da7d" : "16132103bde69cc6ed48e683c8493ca8")
 )
