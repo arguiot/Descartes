@@ -1,4 +1,4 @@
-plot(points, width = 5, color = "black") {
+plot(points, width = 2, color = "black") {
     this.ctx.strokeStyle = color;
     this.ctx.lineWidth = width
     const x = Object.keys(points).map(a => parseFloat(a))

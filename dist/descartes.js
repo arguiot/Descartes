@@ -6,6 +6,12 @@
 const canvas = require("canvas");
 const fs = require("fs");
 class Descartes {
+	center() {
+	    this.mainVector = [this.width / 2, this.height / 2]
+	}
+	clear() {
+	    this.ctx.clearRect(0, 0, this.width, this.height)
+	}
 	drawAxis(x="auto", y="auto", color="black") {
 		this.ctx.fillStyle = color
 		if (x == "auto") {
@@ -52,7 +58,7 @@ class Descartes {
 	    this.ctx.fillRect(0, 0, canvas.width, canvas.height);
 		this.ctx.save()
 	}
-	plot(points, width = 5, color = "black") {
+	plot(points, width = 2, color = "black") {
 	    this.ctx.strokeStyle = color;
 	    this.ctx.lineWidth = width
 	    const x = Object.keys(points).map(a => parseFloat(a))

@@ -12,13 +12,4 @@ gulp.task("copy", () => {
         .pipe(gulp.dest("dist"));
 });
 
-gulp.task("test", () => {
-    gulp
-        .src("src/*.js")
-        .pipe(rigger())
-        .pipe(rename({
-            basename: "descartes"
-        }))
-        .pipe(gulp.dest("__test__"));
-});
-gulp.task("default", ["copy", "test"])
+gulp.task("default", ["copy"])

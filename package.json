@@ -31,6 +31,7 @@
     "gulp-babili": "^0.1.4",
     "gulp-rename": "^1.2.2",
     "gulp-rigger": "^0.5.8",
+    "md5-file": "^3.2.3",
     "theorem.js": "0.0.2"
   },
   "dependencies": {
