@@ -1,0 +1,98 @@
+<svg width="1001" height="1000" viewBox="0 0 1001 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Descartes</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-9555 345)">
+<clipPath id="clip-0" clip-rule="evenodd">
+<path d="M 9555 -345L 10556 -345L 10556 655L 9555 655L 9555 -345Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="Descartes" clip-path="url(#clip-0)">
+<mask id="mask0_alpha" mask-type="alpha">
+<g id="Ellipse 2">
+<use xlink:href="#path0_fill" transform="translate(9555 -345)" fill="#C4C4C4"/>
+</g>
+</mask>
+<g id="Ellipse 2" mask="url(#mask0_alpha)">
+<use xlink:href="#path1_stroke" transform="translate(9556 -345)"/>
+</g>
+<g id="graph" mask="url(#mask0_alpha)">
+<g id="Line">
+<use xlink:href="#path2_stroke" transform="translate(9556 155)"/>
+</g>
+<g id="Line">
+<use xlink:href="#path2_stroke" transform="matrix(6.12323e-17 -1 1 6.12323e-17 10056 655)"/>
+</g>
+<g id="Line">
+<use xlink:href="#path2_stroke" transform="matrix(6.12323e-17 -1 1 6.12323e-17 10156 655)" fill="#828282"/>
+</g>
+<g id="Line">
+<use xlink:href="#path2_stroke" transform="matrix(6.12323e-17 -1 1 6.12323e-17 9956 655)" fill="#828282"/>
+</g>
+<g id="Line">
+<use xlink:href="#path2_stroke" transform="matrix(6.12323e-17 -1 1 6.12323e-17 9856 655)" fill="#828282"/>
+</g>
+<g id="Line">
+<use xlink:href="#path2_stroke" transform="matrix(6.12323e-17 -1 1 6.12323e-17 9656 655)" fill="#828282"/>
+</g>
+<g id="Line">
+<use xlink:href="#path2_stroke" transform="matrix(1 2.67189e-24 -2.67189e-24 1 9556 555)" fill="#828282"/>
+</g>
+<g id="Line">
+<use xlink:href="#path2_stroke" transform="matrix(1 2.67189e-24 -2.67189e-24 1 9556 455)" fill="#828282"/>
+</g>
+<g id="Line">
+<use xlink:href="#path2_stroke" transform="matrix(1 2.67189e-24 -2.67189e-24 1 9556 355)" fill="#828282"/>
+</g>
+<g id="Line">
+<use xlink:href="#path2_stroke" transform="matrix(1 2.67189e-24 -2.67189e-24 1 9556 255)" fill="#828282"/>
+</g>
+<g id="Line">
+<use xlink:href="#path2_stroke" transform="matrix(1 2.67189e-24 -2.67189e-24 1 9556 55)" fill="#828282"/>
+</g>
+<g id="Line">
+<use xlink:href="#path2_stroke" transform="matrix(1 2.67189e-24 -2.67189e-24 1 9556 -45)" fill="#828282"/>
+</g>
+<g id="Line">
+<use xlink:href="#path2_stroke" transform="matrix(1 2.67189e-24 -2.67189e-24 1 9556 -145)" fill="#828282"/>
+</g>
+<g id="Line">
+<use xlink:href="#path2_stroke" transform="matrix(1 2.67189e-24 -2.67189e-24 1 9556 -245)" fill="#828282"/>
+</g>
+<g id="Line">
+<use xlink:href="#path2_stroke" transform="matrix(6.12323e-17 -1 1 6.12323e-17 9756 655)" fill="#828282"/>
+</g>
+<g id="Line">
+<use xlink:href="#path2_stroke" transform="matrix(6.12323e-17 -1 1 6.12323e-17 9556 655)" fill="#828282"/>
+</g>
+<g id="Line">
+<use xlink:href="#path2_stroke" transform="matrix(6.12323e-17 -1 1 6.12323e-17 10256 655)" fill="#828282"/>
+</g>
+<g id="Line">
+<use xlink:href="#path2_stroke" transform="matrix(6.12323e-17 -1 1 6.12323e-17 10356 655)" fill="#828282"/>
+</g>
+<g id="Line">
+<use xlink:href="#path2_stroke" transform="matrix(6.12323e-17 -1 1 6.12323e-17 10456 655)" fill="#828282"/>
+</g>
+</g>
+<g id="Line" mask="url(#mask0_alpha)">
+<use xlink:href="#path3_stroke" transform="matrix(6.12323e-17 -1 1 6.12323e-17 9856 655)"/>
+</g>
+<g id="Vector" mask="url(#mask0_alpha)">
+<use xlink:href="#path4_stroke" transform="translate(9556 -245.5)"/>
+</g>
+<g id="Ellipse" mask="url(#mask0_alpha)">
+<use xlink:href="#path5_fill" transform="translate(9816 -243)" fill="#F2C94C"/>
+</g>
+<g id="Ellipse" mask="url(#mask0_alpha)">
+<use xlink:href="#path5_fill" transform="translate(9816 503)" fill="#F2C94C"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 1001 500C 1001 776.142 776.919 1000 500.5 1000C 224.081 1000 0 776.142 0 500C 0 223.858 224.081 0 500.5 0C 776.919 0 1001 223.858 1001 500Z"/>
+<path id="path1_stroke" d="M 995 500C 995 773.381 773.381 995 500 995L 500 1005C 778.904 1005 1005 778.904 1005 500L 995 500ZM 500 995C 226.619 995 5 773.381 5 500L -5 500C -5 778.904 221.096 1005 500 1005L 500 995ZM 5 500C 5 226.619 226.619 5 500 5L 500 -5C 221.096 -5 -5 221.096 -5 500L 5 500ZM 500 5C 773.381 5 995 226.619 995 500L 1005 500C 1005 221.096 778.904 -5 500 -5L 500 5Z"/>
+<path id="path2_stroke" d="M 0 0L 1000 0L 1000 -1L 0 -1L 0 0Z"/>
+<path id="path3_stroke" d="M 0 0L 1000 0L 1000 -30L 0 -30L 0 0Z"/>
+<path id="path4_stroke" d="M 815 400.5C 815 240.433 680.824 136.784 516.948 73.75C 351.953 10.2856 150.019 -15 -1.09044e-14 -15L 1.09044e-14 15C 147.481 15 345.547 39.9644 506.177 101.75C 667.926 163.966 785 260.567 785 400.5L 815 400.5ZM 785 400.5C 785 540.457 668.635 636.799 507.31 698.747C 347.069 760.279 149.007 785 0 785L 0 815C 151.493 815 353.431 789.971 518.065 726.753C 681.615 663.951 815 560.543 815 400.5L 785 400.5Z"/>
+<path id="path5_fill" d="M 50 25C 50 38.8071 38.8071 50 25 50C 11.1929 50 0 38.8071 0 25C 0 11.1929 11.1929 0 25 0C 38.8071 0 50 11.1929 50 25Z"/>
+</defs>
+</svg>
