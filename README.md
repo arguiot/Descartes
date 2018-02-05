@@ -7,17 +7,36 @@ Make sure you have **Node v8** or higher installed on your computer.
 
 ## Install the required programs
 
-OS      | Command
-------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-OS X    | Using [Homebrew](https://brew.sh/):<br>
-`brew install pkg-config cairo pango libpng jpeg giflib`<br>
-<br>
-Using [MacPorts](https://www.macports.org/):<br>
-`port install pkgconfig cairo pango libpng jpeg giflib`
-Ubuntu  | `sudo apt-get install libcairo2-dev libjpeg-dev libpango1.0-dev libgif-dev build-essential g++`
-Fedora  | `sudo yum install cairo cairo-devel cairomm-devel libjpeg-turbo-devel pango pango-devel pangomm pangomm-devel giflib-devel`
-Solaris | `pkgin install cairo pango pkg-config xproto renderproto kbproto xextproto`
-Windows | [Instructions node-canvas' our wiki](https://github.com/Automattic/node-canvas/wiki/Installation---Windows)
+<table>
+	<thead>
+		<tr>
+			<th>OS</th>
+			<th>Command</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>OS X</td>
+			<td>Using <a href="https://brew.sh/" rel="nofollow">Homebrew</a>:<br><code>brew install pkg-config cairo pango libpng jpeg giflib</code><br><br>Using <a href="https://www.macports.org/" rel="nofollow">MacPorts</a>:<br><code>port install pkgconfig cairo pango libpng jpeg giflib</code></td>
+		</tr>
+		<tr>
+			<td>Ubuntu</td>
+			<td><code>sudo apt-get install libcairo2-dev libjpeg-dev libpango1.0-dev libgif-dev build-essential g++</code></td>
+		</tr>
+		<tr>
+			<td>Fedora</td>
+			<td><code>sudo yum install cairo cairo-devel cairomm-devel libjpeg-turbo-devel pango pango-devel pangomm pangomm-devel giflib-devel</code></td>
+		</tr>
+		<tr>
+			<td>Solaris</td>
+			<td><code>pkgin install cairo pango pkg-config xproto renderproto kbproto xextproto</code></td>
+		</tr>
+		<tr>
+			<td>Windows</td>
+			<td><a href="https://github.com/Automattic/node-canvas/wiki/Installation---Windows">Instructions node-canvas' our wiki</a></td>
+		</tr>
+	</tbody>
+</table>
 
 **Mac OS X v10.11+:** If you have recently updated to Mac OS X v10.11+ and are experiencing trouble when compiling, run the following command: `xcode-select --install`. Read more about the problem [on Stack Overflow](http://stackoverflow.com/a/32929012/148072).
 
