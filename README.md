@@ -1,5 +1,9 @@
 <div align="center"><img src="assets/logo.svg" alt="Descartes' logo" height="300"><h1>Descartes</h1>
   A JS alternative to matplotlib, made for <a href="https://theorem.js.org">TheoremJS</a></div>
+  
+# Examples
+See the docs for examples:
+## [Docs](https://theorem.js.org/desc/#Examples)
 
 # Getting Started
 
