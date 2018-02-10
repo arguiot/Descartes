@@ -2,8 +2,7 @@
   A JS alternative to matplotlib, made for <a href="https://theorem.js.org">TheoremJS</a></div>
   
 # Examples
-See the docs for examples:
-## [Docs](https://theorem.js.org/desc/#Examples)
+See the docs for examples: **[Docs](https://theorem.js.org/desc/#Examples)**
 
 # Getting Started
 
