@@ -36,7 +36,7 @@ Make sure you have **Node v8** or higher installed on your computer.
 		</tr>
 		<tr>
 			<td>Windows</td>
-			<td><a href="https://github.com/Automattic/node-canvas/wiki/Installation---Windows">Instructions node-canvas' our wiki</a></td>
+			<td><a href="https://github.com/Automattic/node-canvas/wiki/Installation:-Windows">Instructions node-canvas' wiki</a></td>
 		</tr>
 	</tbody>
 </table>
