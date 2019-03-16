@@ -35,6 +35,6 @@
     "theorem.js": "1.2.0"
   },
   "dependencies": {
-    "canvas": "^1.6.9"
+    "canvas": "^2.3.1"
   }
 }
