@@ -32,7 +32,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-rigger": "^0.5.8",
     "md5-file": "^3.2.3",
-    "theorem.js": "0.0.2"
+    "theorem.js": "1.2.0"
   },
   "dependencies": {
     "canvas": "^1.6.9"
