@@ -27,7 +27,7 @@
   "homepage": "https://github.com/arguiot/Descartes#readme",
   "devDependencies": {
     "eye.js": "^1.0.2",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-babili": "^0.1.4",
     "gulp-rename": "^1.2.2",
     "gulp-rigger": "^0.5.8",
